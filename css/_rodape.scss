@@ -1,0 +1,27 @@
+footer{
+    padding: 40px 0;
+    background: $cinza;
+    @include box-shadow(0 0 0 10px $cinza);
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    @include d(s){
+        flex-direction: column;
+    }
+    p{
+        color: $bege-claro;
+        
+        @include d(s){
+            text-align: center;
+            
+        }
+    }
+    a img {
+        
+        @include d(s){
+            margin: 20px auto;
+        }
+    }
+}
